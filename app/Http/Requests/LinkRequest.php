@@ -40,6 +40,7 @@ class LinkRequest extends FormRequest
             'name.required' => 'A name is required',
             'name.unique' => 'A name must be unique',
             'name.min' => 'A name must be min 9',
+            'user_id.required' => 'A user_id is required',
         ];
     }
 }

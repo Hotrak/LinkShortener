@@ -32,9 +32,4 @@ class LinkShortenerController extends Controller
     public function userLinks($id){
         return LinkResource::collection($this->linkService->getUserLinks($id));
     }
-
-    public function redirect(Link $link){
-
-        return Redirect::to($link->name);
-    }
 }
