@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\v1\LinkShortenerController;
+use App\Http\Controllers\v1\RedirectController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('{link?}', [LinkShortenerController::class, 'redirect']);
+Route::get('{link?}', [RedirectController::class, 'redirect']);
